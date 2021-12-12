@@ -12,6 +12,10 @@ TagManager:
   - Explosion
   - WinScreen
   - Enemy
+  - RedStar
+  - GreenStar
+  - YellowTag
+  - YellowStar
   layers:
   - Default
   - TransparentFX
