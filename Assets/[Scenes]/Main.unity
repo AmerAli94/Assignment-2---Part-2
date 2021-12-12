@@ -67990,7 +67990,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c9482b25f75ab944e84485f1c750d230, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -68297,7 +68297,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a20e23f0883d2b04a837942180048f18, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -79109,6 +79109,7 @@ MonoBehaviour:
   pickup: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
   firemiss: {fileID: 8300000, guid: 68b1cd0f24df06d4d93e30fb6f956d82, type: 3}
   enemyHit: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
+  buttonPress: {fileID: 8300000, guid: 21cd5a4f62ff93b43a8696dc4edc5c73, type: 3}
   bGM: {fileID: 1737896766}
   winMusic: {fileID: 732185119}
   GameOver: {fileID: 648398570}
@@ -85866,7 +85867,7 @@ MonoBehaviour:
   starsText: {fileID: 1878406340}
   remainingStarsText: {fileID: 1963069476}
   WinPanel: {fileID: 65134645}
-  totalStars: 7
+  totalStars: 2
 --- !u!1 &1408795274
 GameObject:
   m_ObjectHideFlags: 0
@@ -91578,7 +91579,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b0483f90a9c3ffb4599ae8719b38b70d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0

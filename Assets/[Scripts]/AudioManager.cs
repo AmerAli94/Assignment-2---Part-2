@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 26, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance; // singleton based audio manager
 
     //Sounds
-    public AudioClip jump, landing, firing, damage, pickup , firemiss, enemyHit;
+    public AudioClip jump, landing, firing, damage, pickup , firemiss, enemyHit, buttonPress;
     public AudioSource bGM, winMusic, GameOver;
 
     public GameObject soundObject;
@@ -68,7 +68,9 @@ public class AudioManager : MonoBehaviour
             case "enemyHit":
                 CreateSoundObject(enemyHit);
                 break;
-
+            case "buttonPress":
+                CreateSoundObject(buttonPress);
+                break;
 
         }
     }
@@ -85,6 +87,8 @@ public class AudioManager : MonoBehaviour
         newObject.GetComponent<AudioSource>().clip = clip;
 
         newObject.GetComponent<AudioSource>().Play();
+
+        Debug.Log("Sound created");
 
     }
 

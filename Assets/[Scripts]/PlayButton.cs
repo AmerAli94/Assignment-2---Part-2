@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 26, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -43,6 +43,7 @@ public class PlayButton : MonoBehaviour
     public void OnStartPressed()
     {
         animator.SetBool("IsActive", true);
+        AudioManager.instance.PlaySound("buttonPress");
         StartCoroutine(LoadMenu());
         Debug.Log("Start Pressed");
     }

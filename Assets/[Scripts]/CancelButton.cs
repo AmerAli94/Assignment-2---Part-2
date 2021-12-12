@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 26, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -40,6 +40,8 @@ public class CancelButton : MonoBehaviour
     }
     public void OnCancelPressed()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         animator.SetBool("IsActive", true);
         StartCoroutine(CancelGame());
        // Debug.Log("Cancel Pressed");

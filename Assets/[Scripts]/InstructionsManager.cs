@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 26, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -47,7 +47,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnInstructionsButtonPressed()
     {
-        
+        AudioManager.instance.PlaySound("buttonPress");
+
         instructionsBoxAnimator.SetBool("IsOpenActive", true);
         instructionsBoxAnimator.SetBool("IsCloseActive", false);
         animator.SetBool("IsActive", true);
@@ -60,6 +61,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnFirstInstructionsBoxNextPressed()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         //using set active for gameobjects to hide & show Instructions screens/panels
         firstInstructionBox.SetActive(false);
         secondInstructionBox.SetActive(true); // activate only 2nd box
@@ -68,6 +71,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnSecInstructionsBoxPrevButtonPres()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         secondInstructionBox.SetActive(false);
         firstInstructionBox.SetActive(true); // activate only 1st box
         thirdInstructionsBox.SetActive(false);
@@ -76,6 +81,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnSecInstructionsBoxNextButtonPres()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         secondInstructionBox.SetActive(false);
         firstInstructionBox.SetActive(false); 
         thirdInstructionsBox.SetActive(true); // activate only 3rd box
@@ -84,6 +91,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnThirdInstructionsBoxPrevButtonPres()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         secondInstructionBox.SetActive(true); // activate only 2nd box
         firstInstructionBox.SetActive(false); 
         thirdInstructionsBox.SetActive(false);
@@ -92,6 +101,8 @@ public class InstructionsManager : MonoBehaviour
 
     public void OnInstructionBoxCancelPress()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         instructionsBoxAnimator.SetBool("IsOpenActive", false);
         instructionsBoxAnimator.SetBool("IsCloseActive", true);
     }

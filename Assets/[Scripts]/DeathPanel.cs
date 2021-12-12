@@ -27,16 +27,22 @@ public class DeathPanel : MonoBehaviour
     }
     public void OnReplayPressed()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         SceneManager.LoadScene("Main");
     }
 
     public void OnMenuPresses()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         SceneManager.LoadScene("Menu");
     }
 
     public void OnQuitPressed()
     {
+        AudioManager.instance.PlaySound("buttonPress");
+
         Application.Quit();
     }
 }
