@@ -1,0 +1,119 @@
+{
+    "m_SelectedDeviceId": "RFCN80FPFDA",
+    "m_SelectedPackage": {
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.GeorgeBrownCollege.GAME2014F2021Lab8",
+            "processId": 3143,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 3473,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 3707,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 8521,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 9168,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 15221,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 30428,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 11945,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN80FPFDA",
+            "name": "ca.AmerAliMohammed.GAME2014F2021Assignment2Part1",
+            "processId": 16858,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
