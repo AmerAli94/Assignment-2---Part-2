@@ -88902,7 +88902,7 @@ MonoBehaviour:
   starsText: {fileID: 1878406340}
   remainingStarsText: {fileID: 1963069476}
   WinPanel: {fileID: 65134645}
-  totalStars: 13
+  totalStars: 5
 --- !u!1 &1408795274
 GameObject:
   m_ObjectHideFlags: 0
