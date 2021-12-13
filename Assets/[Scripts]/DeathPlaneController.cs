@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 18, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -24,9 +24,12 @@ public class DeathPlaneController : MonoBehaviour
     public Transform playerSpawnPoint;
     public EagleEnemyController eagleFlip;
 
+    private GameContoller gameContoller;
+
     private void Start()
     {
-        eagleFlip.unflip();
+        eagleFlip.Flip();
+        gameContoller = GameObject.FindObjectOfType<GameContoller>();
     }
 
 
@@ -34,8 +37,7 @@ public class DeathPlaneController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.transform.position = playerSpawnPoint.position;
-            eagleFlip.Flip();
+            other.transform.position = gameContoller.CurrentSpawnPoint.position;
          
         }
         else
@@ -43,4 +45,6 @@ public class DeathPlaneController : MonoBehaviour
             other.gameObject.SetActive(false);
         }
     }
+
+
 }

@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 18, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -23,13 +23,17 @@ using UnityEngine;
 public class GameContoller : MonoBehaviour
 {
     public Transform player;
-    public Transform playerSpawnPoint;
+    public Transform CurrentSpawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        player.position = playerSpawnPoint.position;
+        player.position = CurrentSpawnPoint.position;
         Time.timeScale = 1.0f;
     }
     
+    public void SetCurrentSpawnPoint(Transform newSpawnPoint)
+    {
+        CurrentSpawnPoint = newSpawnPoint;
+    }
 }

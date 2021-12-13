@@ -2,8 +2,8 @@
 // PROGRAM NAME: GAME Programming (T163)
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
-// CREATE DATE     : Nov 25, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// CREATE DATE     : Dec 12, 2021
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -12,6 +12,9 @@
 //==================================
 // Change History:
 // Scrapped the trajectary movement and added falling movement of bullets with time based spawning and collider based enemy transform flip
+//==================================
+// Change History:
+//fixed the issue with the bullets colliding with on enemy triggers
 //==================================
 
 using System.Collections;

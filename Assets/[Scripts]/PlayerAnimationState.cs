@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 18, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -27,5 +27,5 @@ public enum PlayerAnimationState
    RUN,
    JUMP,
    DEATH,
-   NYM_OF_ANIMATION_STATE
+   NUM_OF_ANIMATION_STATE
 }

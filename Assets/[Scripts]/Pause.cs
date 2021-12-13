@@ -2,7 +2,7 @@
 // PROGRAM NAME: GAME Programming (T163)
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
-// CREATE DATE     : Nov 29, 2021
+// CREATE DATE     : Dec 12, 2021
 // PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
@@ -11,7 +11,7 @@
 //==================================
 //==================================
 // Change History:
-// 
+// Added Ui button Sounds
 //==================================
 
 
@@ -76,12 +76,6 @@ public class Pause : MonoBehaviour
         AudioManager.instance.PlaySound("buttonPress");
 
         StartCoroutine(LoadMain());
-    }
-
-    private IEnumerator LoadMenu()
-    {
-
-        yield return new WaitForSeconds(1);
     }
 
     private IEnumerator LoadMain()

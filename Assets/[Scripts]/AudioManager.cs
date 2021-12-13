@@ -2,7 +2,7 @@
 // PROGRAM NAME: GAME Programming (T163)
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
-// CREATE DATE     : Nov 26, 2021
+// CREATE DATE     : Dec 12, 2021
 // PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
@@ -11,7 +11,7 @@
 //==================================
 //==================================
 // Change History:
-// 
+// Added button press sounds
 //==================================
 
 using System.Collections;
@@ -87,9 +87,6 @@ public class AudioManager : MonoBehaviour
         newObject.GetComponent<AudioSource>().clip = clip;
 
         newObject.GetComponent<AudioSource>().Play();
-
-        Debug.Log("Sound created");
-
     }
 
     public void PlayLevelBGM()

@@ -2,7 +2,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 26, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -30,8 +30,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject WinPanel;
 
     int stars = 0;
-    [Range(1, 7)]
-    public int totalStars = 7;
+    [Range(1, 13)]
+    public int totalStars = 13;
 
     private void Awake()
     {

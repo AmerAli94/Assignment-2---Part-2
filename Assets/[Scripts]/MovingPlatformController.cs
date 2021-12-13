@@ -3,7 +3,7 @@
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
 // CREATE DATE     : Nov 18, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -92,26 +92,26 @@ public class MovingPlatformController : MonoBehaviour
         }
     }
 
-    //public void OnCollisionEnter2D(Collision2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Player"))
-    //    {
-    //        // transform.SetParent(other.transform);
-    //        other.transform.parent = transform;
-    //        //rb.velocity = other.relativeVelocity;
-    //        other.rigidbody.velocity = rb.velocity;
-    //        AudioManager.instance.PlaySound("landing");
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // transform.SetParent(other.transform);
+            other.transform.parent = transform;
+            //rb.velocity = other.relativeVelocity;
+            other.rigidbody.velocity = rb.velocity;
+            AudioManager.instance.PlaySound("landing");
 
-    //    }
-    //}
+        }
+    }
 
-    //public void OnCollisionExit2D(Collision2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Player") )
-    //    {
-    //        // transform.SetParent(null);
-    //        other.transform.parent = null;
-    //        AudioManager.instance.PlaySound("jump");
-    //    }
-    //}
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // transform.SetParent(null);
+            other.transform.parent = null;
+            AudioManager.instance.PlaySound("jump");
+        }
+    }
 }

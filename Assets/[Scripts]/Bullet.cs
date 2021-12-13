@@ -2,8 +2,8 @@
 // PROGRAM NAME: GAME Programming (T163)
 // STUDENT ID : 101206769
 // AUTHOR     : AMER ALI MOHAMMED
-// CREATE DATE     : Nov 25, 2021
-// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part1
+// CREATE DATE     : Dec 12, 2021
+// PURPOSE     : GAME2014_F2021_ASSIGNMENT2_Part2
 // SPECIAL NOTES:
 // ===============================
 // Change History:
@@ -15,6 +15,10 @@
 //==================================
 // Change History:
 // Added Explosions to the bullet.
+//==================================
+
+// Change History:
+// Modified Bullet Triggers and colliders
 //==================================
 
 
@@ -30,6 +34,7 @@ public class Bullet : MonoBehaviour
     public float speed = 5.0f;
     public int damage = 1;
     private Rigidbody2D rb;
+    private Health playerHealth;
 
 
 
@@ -47,31 +52,40 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Health player = other.GetComponent<Health>();
-        rb.velocity = new Vector2(0, 0);
+        Health player = other.GetComponent<Health>(); //using 2 colliders // Capsule trigger for taking damage
         if (player != null)
         {
             player.TakeDamage(damage);
         }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        
+        rb.velocity = new Vector2(0, 0);
+       
         //Playing the sound when the bullet is not hitting the player.
         AudioManager.instance.PlaySound("firemiss");
 
         // Instantiating as a variable so that I can destroy it later. Hard learned lesson
         GameObject platformHittingExplosions = Instantiate(explosion, transform.position, Quaternion.identity);
-        Destroy(platformHittingExplosions, 0.3f);
+        Destroy(platformHittingExplosions, 0.2f);
+        if (other.gameObject.CompareTag("EagleEnemy"))
+        {
+            //  Physics2D.IgnoreCollision(other, enemyCollider.);
+        }
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && other.gameObject.CompareTag("Platform"))
         {
             //Playing the sound when the bullet is hitting the player.
-            AudioManager.instance.PlaySound("playerhit");
+            AudioManager.instance.PlaySound("playerhit"); // circle colloder for object collisions.
 
-           GameObject explosionEffect =  Instantiate(explosion, transform.position, Quaternion.identity);
-            Destroy(explosionEffect, 0.4f);
+            GameObject explosionEffect = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(explosionEffect, 0.2f);
 
         }
-        Destroy(this.gameObject, 0.3f);
-
-
+        Destroy(this.gameObject, 0.1f);
     }
 
 
