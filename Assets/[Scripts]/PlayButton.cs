@@ -25,7 +25,7 @@ public class PlayButton : MonoBehaviour
 {
 
     public Animator animator;
-    private float WaitforMenuLoad = 1.0f;
+    private float WaitforMenuLoad = 0.5f;
 
 
     // Start is called before the first frame update
